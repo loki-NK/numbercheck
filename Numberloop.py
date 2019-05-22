@@ -8,7 +8,7 @@ with open('numbercheck.csv', 'r') as f:
     for row in reader:
         URL = "https://apix.aerialink.net/v4/numbers"
         Param = {'numbers': row[0]}
-        response = requests.get(url = URL,params = Param,auth=HTTPBasicAuth('d6622ccf','64abd6a0'))
+        response = requests.get(url = URL,params = Param,auth=HTTPBasicAuth('XXXXX','XXXXXX'))
         if (response.status_code >= 401):
             print("Error")
         else:
